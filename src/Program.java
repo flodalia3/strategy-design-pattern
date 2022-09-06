@@ -35,11 +35,15 @@ public class Program {
                 match.getOtherTeam(currentTeam).getRightPlayer().becameStrategic();
                 a=1;
             }
+            if((match.getTeam1().getPoints()==21){
+                int z = 2;
+            }
             if(match.getTeam1().getPoints()==21 || match.getTeam2().getPoints()==21){
                 win = true;
             }
         }
 
+        //cavolo ho sbagliato questa cosa quindi adesso la modifico
 
         /*random number per scegliere quale team comincia,
           random number per decidere quale dei due player attacca per primo.
