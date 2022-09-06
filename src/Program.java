@@ -22,19 +22,19 @@ public class Program {
         Team currentTeam = match.getRandomTeam();
         Player currentPlayer = currentTeam.getRandomPlayer();
         boolean win = false;
-
-            attack(currentPlayer, currentTeam, match);
-
+        attack(currentPlayer, currentTeam, match);
+        int a = 0;
         while(!win){
             currentTeam = match.getOtherTeam(currentTeam);//change team
             currentPlayer = currentTeam.getRandomPlayer();
             defence(currentPlayer, currentTeam, match);
             attack(currentPlayer, currentTeam, match);
-           /* if(){
+            if(a==0){
                 currentTeam.getRightPlayer().becameAggressive();
                 match.getOtherTeam(currentTeam).getLeftPlayer().becameStrategic();
                 match.getOtherTeam(currentTeam).getRightPlayer().becameStrategic();
-            //}*/
+                a=1;
+            }
             if(match.getTeam1().getPoints()==21 || match.getTeam2().getPoints()==21){
                 win = true;
             }
