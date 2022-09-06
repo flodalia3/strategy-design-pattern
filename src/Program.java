@@ -42,7 +42,7 @@ public class Program {
                 win = true;
             }
         }
-
+        //add commento
         //cavolo ho sbagliato questa cosa quindi adesso la modifico
 
         /*random number per scegliere quale team comincia,
