@@ -44,6 +44,10 @@ public class Program {
         match.getOtherTeam(currentTeam).getLeftPlayer().becameStrategic();
         match.getOtherTeam(currentTeam).getRightPlayer().becameStrategic();
 
+        currentTeam.getRightPlayer().becameAggressive();
+        match.getOtherTeam(currentTeam).getLeftPlayer().becameStrategic();
+        match.getOtherTeam(currentTeam).getRightPlayer().becameStrategic();
+
 
 
         /*random number per scegliere quale team comincia,
